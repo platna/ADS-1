@@ -32,9 +32,11 @@ for (uint64_t i = value + 1; ; i++)
 
 uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
-uint64_t res = 0;
-for (uint64_t i = 2; i < hbound; i++){
-  if (checkPrime(i))
-    res =res + i;
-return res;
+  uint64_t res = 0;
+  for (uint64_t i = 2; i < hbound; i++) {
+    if (checkPrime(i))
+      res += i;
+  }
+    return res;
 }
+
